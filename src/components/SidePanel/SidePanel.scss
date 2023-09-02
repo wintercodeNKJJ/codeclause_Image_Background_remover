@@ -1,0 +1,33 @@
+.sidepanel{
+  @apply flex flex-col h-screen w-full max-w-[250px] bg-[var(--primary)];
+
+  .stack{
+    @apply h-[50vh] overflow-y-auto;
+
+    h1{
+      @apply bg-[var(--secondary)] p-2 text-white;
+    }
+
+    li{
+      list-style: none;
+
+      .listItem{
+        @apply flex w-full items-center justify-between p-2;
+
+        img{
+          @apply bg-black rounded-md w-[50px] h-[50px];
+        }
+      }
+    }
+
+    li:not(li:last-child){
+      @apply border-b border-[var(--border)];
+    }
+  }
+}
+
+@media (max-width:1000px) {
+  .sidepanel{
+    @apply absolute right-0;
+  }
+}

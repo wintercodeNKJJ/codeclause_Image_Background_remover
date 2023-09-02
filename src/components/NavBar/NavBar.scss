@@ -1,0 +1,55 @@
+nav{
+  @apply max-w-[250px] w-full bg-[var(--primary)] p-3  h-screen flex flex-col gap-4 relative;
+
+  .title{
+    @apply flex gap-4 border-b-2 border-[var(--secondary)];
+    img{
+      @apply w-[60px] object-cover;
+    }
+    h1{
+      font-size: 24px;
+      line-height: 24px;
+      @apply font-medium;
+    }
+  }
+
+  .connect{
+    @apply flex justify-around gap-2 p-1 bg-[var(--secondary)] rounded-lg text-white;
+
+    li a{
+      @apply flex items-center gap-2 rounded-lg w-[100px] justify-center;
+    }
+
+    li a:hover{
+      @apply bg-[var(--primary)] text-black
+    }
+  }
+
+  .links{
+    @apply flex flex-col gap-1;
+
+    li{
+      a{
+        @apply flex items-center gap-2 p-1 rounded-lg;
+      }
+    }
+
+    a:hover,.selected{
+      @apply text-white bg-[var(--secondary)]
+    }
+
+    a{
+      @apply border-b border-[var(--secondary)];
+    }
+  }
+}
+
+footer{
+  @apply absolute bottom-0 left-0 max-w-[225px] p-3 text-center border-t-2 border-[var(--border)] mx-3;
+}
+
+@media (max-width:1000px) {
+  nav{
+    @apply absolute;
+  }
+}

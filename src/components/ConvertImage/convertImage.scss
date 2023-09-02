@@ -1,0 +1,27 @@
+.covertworkbench{
+  @apply flex flex-col gap-2 w-full p-2;
+  
+  .imageview{
+    @apply h-[45vh] border rounded-lg border-[var(--border)] flex justify-center items-center;
+  }
+
+  .operations{
+    @apply flex justify-end gap-3 py-1;
+    
+    button{
+      @apply flex justify-center gap-2 items-center bg-[var(--secondary)] p-1 rounded-lg text-white w-[100px];
+    }
+
+    button:nth-child(1){
+      @apply bg-blue-500;
+    }
+
+    button:nth-child(2){
+      @apply bg-yellow-500;
+    }
+
+    button:nth-child(3){
+      @apply bg-green-500;
+    }
+  }
+}
