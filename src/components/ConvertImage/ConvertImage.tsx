@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./convertImage.scss";
-import { BsSave, BsFire } from "react-icons/bs";
+import { BsFire } from "react-icons/bs";
 import { useConvertLogic } from "./logic";
 import defaultimage from "./out/default.png";
 
@@ -44,7 +44,7 @@ const ConvertImage = () => {
           }}
         />
         <button type="button" onClick={() => callRemover()}>
-          Convert <BsFire size={20} />
+          Remove back ground <BsFire size={20} />
         </button>
         {/* <button type="button">
           Save <BsSave size={20} />
