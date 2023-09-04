@@ -1,0 +1,13 @@
+.credit{
+  @apply flex justify-center items-center w-full;
+  .content{ 
+    @apply w-full max-w-[400px] flex flex-col gap-4 items-center;
+
+    img{
+      @apply w-full max-w-[200px];
+    }
+    .title{
+      @apply text-3xl;
+    }
+  }
+}

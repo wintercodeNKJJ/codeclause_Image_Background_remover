@@ -1,12 +1,11 @@
 import React from "react";
 import "./Convert.scss";
-import { ConvertImage, SidePanel } from "../../components";
+import { ConvertImage } from "../../components";
 
 const Convert = () => {
   return (
     <article className="convertion">
       <ConvertImage />
-      <SidePanel />
     </article>
   );
 };

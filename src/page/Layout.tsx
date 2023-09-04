@@ -4,6 +4,7 @@ import { Convert } from "./";
 import { Routes, Route } from "react-router-dom";
 
 import "./Layout.scss";
+import Credit from "./Credit/Credit";
 
 const Layout = () => {
   return (
@@ -11,9 +12,7 @@ const Layout = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Convert />} />
-        <Route path="/Accouts" element={<Convert />} />
-        <Route path="/credit" element={<Convert />} />
-        <Route path="/login" element={<Convert />} />
+        <Route path="/credit" element={<Credit />} />
       </Routes>
     </main>
   );

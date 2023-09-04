@@ -2,7 +2,10 @@
   @apply flex flex-col gap-2 w-full p-2;
   
   .imageview{
-    @apply h-[45vh] border rounded-lg border-[var(--border)] flex justify-center items-center;
+    @apply h-[45vh] border rounded-lg p-4 border-[var(--border)] flex justify-center items-center;
+    img{
+      @apply object-contain h-full;
+    }
   }
 
   .operations{
@@ -10,6 +13,10 @@
     
     button{
       @apply flex justify-center gap-2 items-center bg-[var(--secondary)] p-1 rounded-lg text-white w-[100px];
+    }
+
+    .upload{
+      @apply flex justify-center gap-2 items-center bg-[var(--secondary)] p-1 rounded-lg text-white
     }
 
     button:nth-child(1){

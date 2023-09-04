@@ -48,8 +48,8 @@ footer{
   @apply absolute bottom-0 left-0 max-w-[225px] p-3 text-center border-t-2 border-[var(--border)] mx-3;
 }
 
-@media (max-width:1000px) {
-  nav{
-    @apply absolute;
-  }
-}
+// @media (max-width:1000px) {
+//   nav{
+//     @apply absolute;
+//   }
+// }

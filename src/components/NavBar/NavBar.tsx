@@ -1,13 +1,7 @@
 import React from "react";
 import "./NavBar.scss";
 import { NavLink } from "react-router-dom";
-import {
-  BsDoorOpen,
-  BsPersonAdd,
-  BsLayers,
-  BsPeople,
-  BsAward,
-} from "react-icons/bs";
+import { BsLayers, BsAward } from "react-icons/bs";
 
 const NavBar = () => {
   return (
@@ -16,19 +10,6 @@ const NavBar = () => {
         <img src={require("../../assets/img/logo.png")} alt="logo" />
         <h1>Remove the BackGround</h1>
       </div>
-
-      <ul className="connect">
-        <li>
-          <NavLink to="login">
-            Login <BsDoorOpen />
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="register">
-            Register <BsPersonAdd />
-          </NavLink>
-        </li>
-      </ul>
 
       <ul className="links">
         <li>
@@ -40,12 +21,10 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="accounts">
-            <BsPeople /> Accounts
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="credit">
+          <NavLink
+            to="credit"
+            className={({ isActive }) => (isActive ? "selected" : "")}
+          >
             <BsAward /> Credit
           </NavLink>
         </li>
